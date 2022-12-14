@@ -81,12 +81,12 @@ jobs:
         ##内网穿透服务##
         echo "CONFIG_FIRMWARE_INCLUDE_ALDRIVER=y" >> .config  #ALDRIVER  ~3m
         echo "CONFIG_FIRMWARE_INCLUDE_MENTOHUST=n" >> .config #mentohust
-        echo "CONFIG_FIRMWARE_INCLUDE_FRPC=y" >> .config #mentohust
-        echo "CONFIG_FIRMWARE_INCLUDE_FRPS=y" >> .config #mentohust
+        echo "CONFIG_FIRMWARE_INCLUDE_FRPC=y" >> .config #FRPC
+        echo "CONFIG_FIRMWARE_INCLUDE_FRPS=y" >> .config #FRPS
         
         ##下载共享服务##
-        echo "CONFIG_FIRMWARE_INCLUDE_TRANSMISSION=y" >> .config #zerotier ~1.3M
-        echo "CONFIG_FIRMWARE_INCLUDE_TRANSMISSION_WEB_CONTROL=y" >> .config #aliddns
+        echo "CONFIG_FIRMWARE_INCLUDE_TRANSMISSION=y" >> .config #TRANSMISSION
+        echo "CONFIG_FIRMWARE_INCLUDE_TRANSMISSION_WEB_CONTROL=y" >> .config #TRANSMISSION_WEB_CONTROL
         
         ##流控QOS##
         echo "CONFIG_FIRMWARE_INCLUDE_SQM=y" >> .config #SQM QOS#CPU超频
