@@ -85,8 +85,8 @@ jobs:
         echo "CONFIG_FIRMWARE_INCLUDE_FRPS=y" >> .config #FRPS
         
         ##下载共享服务##
-        echo "CONFIG_FIRMWARE_INCLUDE_TRANSMISSION=y" >> .config #TRANSMISSION
-        echo "CONFIG_FIRMWARE_INCLUDE_TRANSMISSION_WEB_CONTROL=y" >> .config #TRANSMISSION_WEB_CONTROL
+        echo "CONFIG_FIRMWARE_INCLUDE_TRANSMISSION=n" >> .config #TRANSMISSION
+        echo "CONFIG_FIRMWARE_INCLUDE_TRANSMISSION_WEB_CONTROL=n" >> .config #TRANSMISSION_WEB_CONTROL
         
         ##流控QOS##
         echo "CONFIG_FIRMWARE_INCLUDE_SQM=y" >> .config #SQM QOS#CPU超频
